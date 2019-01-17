@@ -21,7 +21,7 @@ $(function(){
 				  console.log(result)
 				  if (result.code === '210') {
 					  $('.mask,.dialog').show();
-					  $('.dialog .dialog-bd p').html(result.message);
+					  $('.dialog .dialog-bd p').html(result.msg);
 					  $('#btnAffirm').click(function(){
 						  location.href=LOCAL_INDEXURL;
 					  });
@@ -33,12 +33,12 @@ $(function(){
 					  });
 				  }else {
 					  $('.mask,.dialog').show();
-					  $('.dialog .dialog-bd p').html(result.message);
+					  $('.dialog .dialog-bd p').html(result.msg);
 				  }
 			  },
 			  error:function(result){
 				  $('.mask,.dialog').show();
-				  $('.dialog .dialog-bd p').html(result.message);
+				  $('.dialog .dialog-bd p').html(result.msg);
 			  }
 			});
 		}
